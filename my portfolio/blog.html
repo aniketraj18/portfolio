@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Aniket -->
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="intro.html">Intro</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!-- </div> -->
+    <div class="main">
+        <div class="hamburger">
+            <img class="ham" src="img/ham.png" alt="" width="25">
+            <img class="cross" src="img/cross.png" alt="" width="25">
+        </div>
+        <div class="blogcontainer">
+            <h1>Projects By Aniket!</h1>
+            <div class="blogitem">
+                <h2>Student Amenity Center</h2>
+                <p>This is a RDBMS project developed using HTML,CSS,Javascript(front-end) and Php,MySQL (backend). This project<span id="dots">...</span><span id="more"> will enable the user to buy and sell his amenities, The user shall login to the system and check for availability of items.
+                    The admin shall check for the availability of the items to the customer. The user can make payment only in cash on delivery. 
+                   All the data regarding the products are stored in MySQL database. The user has to enter his name, address, phone details .The UI is attractive and the connectivity to back end is robust. The main advantage is that the
+                   Students can buy college stationary items in weekends also.</span></p>
+                   
+                <button onclick="myFunction()" id="myBtn" class="btn btn-sm mx-2 my-2">Read More</button>
+                
+                    <style>
+                        #more{
+                    display:none;}
+                </style>
+                <script>
+                    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+                </script>
+
+            </div>
+            <div class="blogitem">
+                <h2>Text Analyzer app </h2>
+                <p>This application is build using ReactJs,HTML and CSS to analyze a text typed in the text box<span id="dots">....</span><span id="more">
+                 It will calculate the no.of words,letters,vowels and the time to read the text.Buttons like Uppercase ,lowercase,clear are added which will convert the text to uppercase, to lowercase and clear the text.</span></p>
+                <button onclick="myFunction()" id="myBtn"  class="btn btn-sm">Read More</button>
+
+            </div>
+            <!-- <div class="blogitem">
+                <h2>Learn Javascript in a fun way</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur et quas quaerat totam consectetur veritatis sed labore expedita, fugit quae nostrum earum.</p><br>
+                <button class="btn btn-sm">Read More</button>
+
+            </div> -->
+
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

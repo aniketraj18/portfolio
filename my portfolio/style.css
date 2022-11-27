@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+.sidebar{
+    background-color:rgb(187, 185, 185);
+    width: 10vw;
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    transition:transform 0.3s ease-in;
+    position: absolute;
+
+}
+.sidebar nav{
+    padding: 50px;
+    font-size: 20px;
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 33px 0px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 23px;
+}
+.container{
+    display: flex;
+}
+.info{
+    /* background-color: rgba(210, 64, 166, 0.719); */
+    height: 60vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+
+    justify-content: space-around;
+}
+.devinfo{
+    display: flex;
+   justify-content:  center;
+   flex-direction: column;
+   font-family: 'Source Code Pro', monospace;
+   margin-left: 140px;
+} 
+.hello{
+    font-size: 45px;
+    
+
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.about{
+    font-size: 26px;
+}
+.more about{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.btn{
+    margin-top: 30px;
+}
+.btn{
+    padding: 5px 9px;
+    border-radius: 27px;
+    color: white;
+    background-color: rgb(50, 50, 139);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.devpic img{
+    width: 519px;
+    height: 60vh;
+    margin: left 40px;
+    
+}
+.contactform{
+    font-family:sans-serif;
+    /* padding-top: 140px; */
+    margin: 0 132px;
+}
+.contactform h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.contactform form div{
+    padding: 10px 15px;
+    display:flex;
+    flex-direction: column;
+
+}
+.contactform form div input{
+    width:18vw;
+    border-radius: 4px;
+    margin:6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size:11px;
+    color:midnightblue;
+    margin:0 5px;
+
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width:24px;
+    margin:3px 0;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ h1{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 23px;
+
+}
+.intro{
+    margin: 0px 132px;}
+.intro h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:12px;
+}
+.intro p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:12px;
+}
+.skillcontainer{
+    padding:13px;
+
+}
+.skill{
+    height: 8px;
+    width: 180px;
+    background-color: red;
+}
+.skillitem{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hundred{
+    width:250px;
+    background-color: red;
+    border:solid black 2px;
+}
+.fifty{
+    width:62.5px;
+    background-color: yellow;
+    border:solid black 2px;
+}
+.sevent5{
+    width:125px;
+    background-color: orange;
+    border:solid black 2px;
+}
+.sidebarGo{
+    transform: translate(-430px,0px);
+    position:absolute;
+}
+@media (max-width:1200px){
+    
+    /* .sidebar{
+        transform: translate(-430px,0px);
+        position:absolute;
+    } */
+    .devpic{
+        display: none;
+    }
+    .intro,.blogcontainer,.contactform{
+        margin: 50px 8px;
+    }
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 10px;
+
+}
+.cross{
+    margin-left: 115px;
+    margin-top: 4px;
+}
+.blogcontainer{
+    margin: 0px 132px;
+    top: 40px;
+}
